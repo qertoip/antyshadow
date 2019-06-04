@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "AntyShadow",
+  "version": "1.0",
+
+  "description": "Czyści forum.bitcoin.pl z postów ShadowOfHarbringer",
+
+  "icons": {
+    "48": "icons/antyshadow-48.jpg",
+    "96": "icons/antyshadow-96.jpg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://forum.bitcoin.pl/*"],
+      "js": ["antyshadow.js"]
+    }
+  ]
+}
